@@ -44,6 +44,7 @@ abstract public class Piece
                     {
                         List<Move> moves = new ArrayList<>();
                         
+                        
                     }
             }
     }
