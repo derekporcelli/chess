@@ -1,50 +1,68 @@
 package chess.chess;
 
-import java.util.ArrayList;
-import java.util.List;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
-abstract public class Piece
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+abstract public class Piece extends Button
     {
-        private Square currentSquare;
         private Color color;
+        private ImageView sprite;
+        private static String path = "src/main/resources/chess/chess/";
+        private int file;
+        private int rank;
         
-        public Piece (Square startingSquare, Color color)
+        public Piece (Color color, String name, int file, int rank)
             {
-                currentSquare = startingSquare;
+                super();
+                this.file = file;
+                this.rank = rank;
                 this.color = color;
+                try
+                    {
+                        sprite = new ImageView(new Image(new FileInputStream(path + name + color + ".png")));
+                    }
+                catch (FileNotFoundException e)
+                    {
+                        throw new RuntimeException(e);
+                    }
+                this.setGraphic(sprite);
+                this.setStyle("-fx-background-color: transparent; -fx-background-radius: 0; -fx-padding: 0 0 0 0;");
             }
         
-        public Square getCurrentSquare ()
+        public int getFile ()
             {
-                return currentSquare;
+                return file;
             }
         
-        public void kill ()
+        public int getRank ()
             {
-                currentSquare = null;
+                return rank;
             }
         
-        abstract public List<Move> getPossibleMoves ();
+        public Color getColor ()
+            {
+                return color;
+            }
         
-        abstract public void move ();
+        public ImageView getSprite ()
+            {
+                return sprite;
+            }
         
-        class Pawn extends Piece
+        public static class Pawn extends Piece
             {
                 private static int VALUE = 1;
                 private boolean isUnmoved;
+                private static String name = "pawn";
                 
-                public Pawn (Square startingSquare, Color color)
+                public Pawn (Color color, int file, int rank)
                     {
-                        super(startingSquare, color);
+                        super(color, name, file, rank);
                         isUnmoved = true;
-                    }
-                
-                @Override
-                public List<Move> getPossibleMoves ()
-                    {
-                        List<Move> moves = new ArrayList<>();
-                        
-                        
                     }
             }
     }

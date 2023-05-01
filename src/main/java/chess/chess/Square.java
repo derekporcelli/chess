@@ -1,23 +1,28 @@
 package chess.chess;
 
-public class Square
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+
+public class Square extends Button
     {
-        private char file;
-        private int row;
-        
-        public Square (char file, int row)
+        private int file;
+        private int rank;
+    
+        public Square (int file, int rank)
             {
+                super();
                 this.file = file;
-                this.row = row;
+                this.rank = rank;
+                this.setStyle("-fx-background-color: transparent; -fx-background-radius: 0; -fx-padding: 0 0 0 0;");
             }
         
-        public char getFile ()
+        public int getFile ()
             {
                 return file;
             }
         
-        public int getRow ()
+        public int getRank ()
             {
-                return row;
+                return rank;
             }
     }

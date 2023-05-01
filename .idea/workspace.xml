@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dd67402-075d-4aa6-ae0a-119b62737aa4" name="Changes" comment="save for now gtg to gym" />
+    <list default="true" id="2dd67402-075d-4aa6-ae0a-119b62737aa4" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chess/chess/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chess/chess/ChessUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/Move.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/chess/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/chess/Square.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +23,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,6 +58,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -55,6 +67,26 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="chess.chess" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ChessUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chess.chess.ChessUI" />
+      <module name="chess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chess.chess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ChessUI" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682788742730</updated>
-      <workItem from="1682788743822" duration="4697000" />
+      <workItem from="1682788743822" duration="21651000" />
     </task>
     <task id="LOCAL-00001" summary="save for now gtg to gym">
       <created>1682797769181</created>
@@ -73,7 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682797769181</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="save for now gtg to gym">
+      <created>1682797911106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682797911106</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <created>1682798073799</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682798073799</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="save for now gtg to gym" />
-    <option name="LAST_COMMIT_MESSAGE" value="save for now gtg to gym" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
