@@ -1,9 +1,10 @@
 package chess.chess;
 
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
-public class Square extends Button
+public class Square extends Node
     {
         private int file;
         private int rank;

@@ -2,6 +2,7 @@ package chess.chess;
 
 public enum Color
     {
+        EMPTY,
         WHITE,
         BLACK;
         
@@ -9,6 +10,10 @@ public enum Color
             {
                 switch (this)
                     {
+                        case EMPTY ->
+                            {
+                                return EMPTY;
+                            }
                         case WHITE ->
                             {
                                 return BLACK;
@@ -19,7 +24,26 @@ public enum Color
                             }
                         default ->
                             {
-                                throw new AssertionError("Unknown direction: " + this);
+                                throw new AssertionError("Unknown color: " + this);
+                            }
+                    }
+            }
+        
+        public int getPawnMove ()
+            {
+                switch (this)
+                    {
+                        case WHITE ->
+                            {
+                                return 1;
+                            }
+                        case BLACK ->
+                            {
+                                return - 1;
+                            }
+                        default ->
+                            {
+                                return 0;
                             }
                     }
             }
