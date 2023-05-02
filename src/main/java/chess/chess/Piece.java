@@ -9,12 +9,11 @@ import java.io.FileNotFoundException;
 
 abstract public class Piece extends Button
     {
-        private Color color;
-        private ImageView sprite;
-        private static String path = "src/main/resources/chess/chess/";
+        private final Color color;
+        private static final String path = "src/main/resources/chess/chess/";
         private int file;
         private int rank;
-        private PieceType type;
+        private final PieceType type;
         private boolean isUnmoved;
         
         public Piece (Color color, PieceType type, int file, int rank)
@@ -25,6 +24,7 @@ abstract public class Piece extends Button
                 this.rank = rank;
                 this.color = color;
                 isUnmoved = true;
+                ImageView sprite;
                 try
                     {
                         sprite = new ImageView(new Image(new FileInputStream(path + type.toString() + color + ".png")));
@@ -71,12 +71,7 @@ abstract public class Piece extends Button
             {
                 return color;
             }
-        
-        public ImageView getSprite ()
-            {
-                return sprite;
-            }
-        
+    
         public void setFile (int file)
             {
                 this.file = file;
@@ -89,8 +84,8 @@ abstract public class Piece extends Button
         
         public static class Empty extends Piece
             {
-                private static int VALUE = 0;
-                private static PieceType type = PieceType.empty;
+                private static final int VALUE = 0;
+                private static final PieceType type = PieceType.empty;
                 
                 public Empty (int file, int rank)
                     {
@@ -100,8 +95,8 @@ abstract public class Piece extends Button
         
         public static class Pawn extends Piece
             {
-                private static int VALUE = 1;
-                private static PieceType type = PieceType.pawn;
+                private static final int VALUE = 1;
+                private static final PieceType type = PieceType.pawn;
                 
                 public Pawn (Color color, int file, int rank)
                     {

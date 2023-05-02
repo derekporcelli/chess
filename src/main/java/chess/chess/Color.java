@@ -22,10 +22,7 @@ public enum Color
                             {
                                 return WHITE;
                             }
-                        default ->
-                            {
-                                throw new AssertionError("Unknown color: " + this);
-                            }
+                        default -> throw new AssertionError("Unknown color: " + this);
                     }
             }
         

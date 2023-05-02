@@ -8,7 +8,7 @@ public class Board
     {
         private Color turn;
         private Piece selectedPiece;
-        private Piece[][] board;
+        private final Piece[][] board;
         
         public Board ()
             {
@@ -34,21 +34,21 @@ public class Board
         
         public List<Piece> move (Piece original, Piece destination)
             {
-                int originalFile = selectedPiece.getFile();
-                int originalRank = selectedPiece.getRank();
+                int originalFile = original.getFile();
+                int originalRank = original.getRank();
                 int destinationFile = destination.getFile();
                 int destinationRank = destination.getRank();
                 
                 board[destinationFile][destinationRank] = board[originalFile][originalRank];
-                //board[originalFile][originalRank] = new Piece.Empty(originalFile, originalRank);
+                board[originalFile][originalRank] = new Piece.Empty(originalFile, originalRank);
                 board[destinationFile][destinationRank].setFile(destinationFile);
                 board[destinationFile][destinationRank].setRank(destinationRank);
                 board[destinationFile][destinationRank].move();
                 turn = original.getColor().opposite();
                 
                 List<Piece> updatedPieces = new ArrayList<>();
-                updatedPieces.add(original);
-                updatedPieces.add(destination);
+                updatedPieces.add(board[originalFile][originalRank]);
+                updatedPieces.add(board[destinationFile][destinationRank]);
                 return updatedPieces;
             }
         
@@ -56,12 +56,7 @@ public class Board
             {
                 return board;
             }
-        
-        public Piece getSelectedPiece ()
-            {
-                return selectedPiece;
-            }
-        
+    
         public Color getTurn ()
             {
                 return turn;
@@ -70,7 +65,6 @@ public class Board
         public void selectPiece (Piece piece)
             {
                 selectedPiece = piece;
-                System.out.println(piece.getFile() + ", " + piece.getRank());
             }
         
         public List<Piece> handle (Piece destination)
@@ -107,10 +101,10 @@ public class Board
         
         @Override
         public String toString(){
-            String string = "";
+            StringBuilder string = new StringBuilder();
             for(Piece[] rank : board){
-                string += Arrays.toString(rank) + "\n";
+                string.append(Arrays.toString(rank)).append("\n");
             }
-            return string;
+            return string.toString();
         }
     }

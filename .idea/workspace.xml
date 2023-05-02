@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2dd67402-075d-4aa6-ae0a-119b62737aa4" name="Changes" comment="huge progress we got pieces and they move">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chess/chess/PieceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chess/chess/emptyEMPTY.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chess/chess/highlight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chess/chess/pawnBLACK.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chess/chess/pawnWhite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chess/chess/squareBLACK.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/chess/chess/squareWHITE.png" afterDir="false" />
+    <list default="true" id="2dd67402-075d-4aa6-ae0a-119b62737aa4" name="Changes" comment="stupid ghost empty piece being added on top of once moved pieces">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/chess/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/ChessUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/chess/ChessUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/chess/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/chess/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chess/chess/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chess/chess/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chess/chess/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/chess/chess/emptyEMPTY.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chess/chess/emptyEMPTY.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +97,7 @@
       <updated>1682788742730</updated>
       <workItem from="1682788743822" duration="21840000" />
       <workItem from="1682909243927" duration="60000" />
-      <workItem from="1682954732053" duration="12700000" />
+      <workItem from="1682954732053" duration="17342000" />
     </task>
     <task id="LOCAL-00001" summary="save for now gtg to gym">
       <created>1682797769181</created>
@@ -139,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682908586325</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="stupid ghost empty piece being added on top of once moved pieces">
+      <created>1682975062128</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682975062128</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +156,7 @@
     <MESSAGE value="save for now gtg to gym" />
     <MESSAGE value="test" />
     <MESSAGE value="huge progress we got pieces and they move" />
-    <option name="LAST_COMMIT_MESSAGE" value="huge progress we got pieces and they move" />
+    <MESSAGE value="stupid ghost empty piece being added on top of once moved pieces" />
+    <option name="LAST_COMMIT_MESSAGE" value="stupid ghost empty piece being added on top of once moved pieces" />
   </component>
 </project>
